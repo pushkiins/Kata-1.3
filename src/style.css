@@ -65,7 +65,7 @@ body {
 }
 
 
-.header-block__burger-button {
+.header__burger-button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -73,11 +73,11 @@ body {
     
 }
 
-.header-block__logo-link {
+.header__logo-link {
     background-color: #fff;
 }
 
-.header-block__divider {
+.header__divider {
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
@@ -85,14 +85,14 @@ body {
     margin-right: 20px;
 }
 
-.header-block__repair-button {
+.header__repair-button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #FF3E79;
 }
 
-.header-block__checkstatus-button {
+.header__checkstatus-button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -100,15 +100,15 @@ body {
 }
 
 
-.header-block__call-button {
+.header__call-button {
     display: none;
 }
 
-.header-block__chat-button {
+.header__chat-button {
     display: none;
 }
 
-.header-block__profile-button {
+.header__profile-button {
     display: none;
 }
 
@@ -220,7 +220,7 @@ body {
         margin: 0 auto;   
     }
 
-    .header-block__call-button {
+    .header__call-button {
         display: block;
         width: 40px;
         height: 40px;
@@ -229,7 +229,7 @@ body {
         cursor: pointer;
     }
     
-    .header-block__chat-button {
+    .header__chat-button {
         display: block;
         width: 40px;
         height: 40px;
@@ -238,7 +238,7 @@ body {
         cursor: pointer;
     }
     
-    .header-block__profile-button {
+    .header__profile-button {
         display: block;
         width: 40px;
         height: 40px;
