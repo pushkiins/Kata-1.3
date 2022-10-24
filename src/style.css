@@ -43,21 +43,21 @@ body {
     width: 100%;
 }
 
-.header-block1 {
+.header__wrapper-logo {
     display: flex;
     align-items: center;
     margin-left: 16px;
     
 }
 
-.header-block2 {
+.header__action {
     display: flex;
     align-items: center;
     width: 100%;
     margin-right: 16px;
 }
 
-.header-block__button {
+.header-action__button {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -247,7 +247,7 @@ body {
         cursor: pointer;
     }
     
-    .header-block__button {
+    .header-action__button {
         margin-left: auto;
         display: flex;
         width: 50%;
@@ -301,7 +301,7 @@ body {
         margin: 42px 0 10px 0;
     }
 
-    .main-header__block1 {
+    .main-header__services {
         display: flex;
         width: 100%;
         align-items: center;
