@@ -132,7 +132,7 @@ body {
     color: #1B1C21;
 }
 
-.main-header__title:before {
+.main-header__title:before:first-child {
     content: "";
     display: block;
     width: 3px;
