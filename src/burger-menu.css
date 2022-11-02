@@ -43,13 +43,13 @@ ul, li, h1, h2, a, p, body {
    margin: 18px auto 0 auto;
 }
 
-.aside__header {
+.header {
    display: flex;
    align-items:center;
    justify-content: space-between;
 }
 
-.header_item {
+.header__item {
    width: 40px;
    height: 40px;
    border-radius: 50%;
@@ -59,20 +59,20 @@ ul, li, h1, h2, a, p, body {
    justify-content: center;
 }
 
-.header_item:hover {
+.header__item:hover {
    cursor: pointer;
 }
 
-.header_logo {
+.header__logo {
    margin-right: 70px;
    background-color: #fff;
 }
 
-.aside__nav {
+.nav {
    padding-top: 40px;
 }
 
-.aside__nav-wrapper {
+.nav__wrapper {
    list-style-type: none;
    display: grid;
    flex-wrap: wrap;
@@ -81,7 +81,7 @@ ul, li, h1, h2, a, p, body {
 
 
 
-.aside__nav-link {
+.nav__item {
    font-family: 'TTLakes';
    font-size: 16px;
    line-height: 24px;
@@ -111,15 +111,16 @@ ul, li, h1, h2, a, p, body {
    color: #7E7E82;
 }
 
-.aside__footer {
-   margin-top: auto;
+.footer {
+   position: fixed;
+   bottom: 32px;
 }
 
-.aside__footer-buuton {
+.footer__wrapper {
    display: flex;
 }
 
-.footer-buuton {
+.footer__button {
    width: 40px;
    height: 40px;
    border-radius: 50%;
@@ -130,11 +131,11 @@ ul, li, h1, h2, a, p, body {
    margin-right: 16px;
 }
 
-.footer-buuton:hover {
+.footer__button:hover {
    cursor: pointer;
 }
 
-.footer-mail {
+.footer__mail {
    display: block;
    font-family: 'TT Lakes';
    font-size: 16px;
@@ -145,7 +146,7 @@ ul, li, h1, h2, a, p, body {
    margin-top: 16px;
 }
 
-.footer-phone {
+.footer__phone {
    display: block;
    font-family: 'TT Lakes';
    font-size: 24px;
@@ -156,18 +157,18 @@ ul, li, h1, h2, a, p, body {
    margin-top: 12px;
 }
 
-.foter_lang {
+.foter__lang {
    display: flex;
    list-style-type: none;
    background-color: #fff;
    margin-top: 30px;
 }
 
-.lang_item {
+.lang__item {
    background-color: #fff;
 }
 
-.lang_item:hover {
+.lang__item:hover {
    color: #7E7E82;
    cursor: pointer;
 }
