@@ -72,7 +72,7 @@ ul, li, h1, h2, a, p, body {
    padding-top: 40px;
 }
 
-.nav__wrapper {
+.nav__list {
    list-style-type: none;
    display: grid;
    flex-wrap: wrap;
@@ -81,7 +81,7 @@ ul, li, h1, h2, a, p, body {
 
 
 
-.nav__item {
+.nav__link{
    font-family: 'TTLakes';
    font-size: 16px;
    line-height: 24px;
@@ -135,7 +135,7 @@ ul, li, h1, h2, a, p, body {
    cursor: pointer;
 }
 
-.footer__mail {
+.mail__link {
    display: block;
    font-family: 'TT Lakes';
    font-size: 16px;
@@ -146,7 +146,7 @@ ul, li, h1, h2, a, p, body {
    margin-top: 16px;
 }
 
-.footer__phone {
+.phone__link {
    display: block;
    font-family: 'TT Lakes';
    font-size: 24px;
@@ -157,7 +157,7 @@ ul, li, h1, h2, a, p, body {
    margin-top: 12px;
 }
 
-.foter__lang {
+.lang {
    display: flex;
    list-style-type: none;
    background-color: #fff;
