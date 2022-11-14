@@ -402,6 +402,29 @@ body {
         content: url('./assets/images/expand.svg');
         margin-left: -18px;
     }
+    .swiper-wrapper::-webkit-scrollbar {
+        width: 0;
+    }
+    .swiper-slide {
+        width: 33%;
+    }
+    .brand-swiper__item {
+        display: block;
+        width: 240px;
+        cursor: pointer;
+    }
+    .brand-swiper__button {
+        margin-left: 18px;
+        cursor: pointer;
+    }
+    
+    .show {
+        height: auto !important;
+    }
+
+    .button-clicked::before {
+        transform: rotate(180deg);
+    }
 
 
 @media screen and (min-width: 1120px) {
