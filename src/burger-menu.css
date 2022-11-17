@@ -103,8 +103,7 @@ ul, li, h1, h2, a, p, body {
    background-color: #41F6D7;
    transform: matrix(-1, 0, 0, 1, 0, 0);
    position: relative;
-    left: -15px;
-
+   left: -15px;
 }
 
 .aside__nav-link:hover {
