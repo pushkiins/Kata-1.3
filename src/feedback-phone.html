@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./feedback-phone.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal" id="feedback-phone">
+        <div class="modal__container">
+          <button
+            class="close-btn modal__close-btn" id="closefbphone" type="button" title="Закрыть">
+          </button>
+          <h2 class="title modal__title">Заказать звонок</h2>
+          <form class="modal-feedback" action="/" method="post">
+            <label>
+              <input class="input modal-feedback__input" type="tel" name="telephone" placeholder="Телефон" required/>
+            </label>
+            <p class="modal-feedback__text">
+                Нажимая “отправить”, вы даете согласие на
+                <a class="modal-feedback__link" href="/" title="Согласие на обработку персональных данных">обработку персональных данных</a>
+                    и соглашаетесь с нашей<a class="modal-feedback__link" href="/" title="политика конфиденциальности">политикой конфиденциальности
+                </a>
+            </p>
+            <input class="btn modal-feedback__btn" type="submit" />
+          </form>
+        </div>
+      </div>
+</body>
+</html>

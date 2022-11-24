@@ -29,16 +29,19 @@
      padding: 0;
  }
  .modal {
-
-    background-color:#FFFFFF;
+    background-color: ffffff;
     position: absolute;
     z-index: 100;
     top: 0;
-    right: 0;
+    right: -100%;
     max-width: 320px;
     flex-direction: column;
     min-height: 1024px;
     box-shadow: 16px 0px 52px rgb(14 24 80 / 20%);
+ }
+
+ .modal.active {
+    right: 0;
  }
 
  .modal__container {
