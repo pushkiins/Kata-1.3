@@ -13,11 +13,11 @@
    font-style: normal;
 }
 
-html {
+/* html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 
 
@@ -33,11 +33,12 @@ ul, li, h1, h2, a, p, body {
    display: flex;
    flex-direction: column;
    width: 320px;
-   min-height: 1024px;
+   min-height: 100vh;
    box-shadow: 16px 0px 52px rgb(14 24 80 / 20%);
    background-color: #fff;
-   left: -100%;
+   left: -320px;
    position:absolute;
+   z-index: 10;
 }
 .aside.active {
    transition: 1s transform;
@@ -122,8 +123,9 @@ ul, li, h1, h2, a, p, body {
 }
 
 .aside-footer {
-   position: fixed;
-   bottom: 32px;
+   /* position: fixed; */
+
+   margin: 64px 0;
 }
 
 .aside-footer__wrapper {

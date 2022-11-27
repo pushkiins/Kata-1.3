@@ -15,6 +15,8 @@
 
 html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 *, *:after, *:before {
@@ -34,8 +36,9 @@ a {
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */
     background: #F8F8F8;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -72,6 +75,10 @@ body {
     width: 100%;
     justify-content: space-between;
     list-style-type: none;
+}
+
+.main {
+    position: relative;
 }
 
 
@@ -324,7 +331,8 @@ body {
 .swiper__wrapper {
     display: flex;
     margin: 16px 0;
-    overflow: auto;
+    overflow-x: auto;
+    /* overflow: auto; */
 }
 .swiper__slide {
     display: block;
@@ -471,6 +479,22 @@ body {
     font-family: 'TTLakes';
     mix-blend-mode: normal;
     text-decoration: none;
+}
+
+.modal_wrapper {
+    display: none;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.modal_wrapper-active {
+    display: block;
 }
 
 
@@ -686,7 +710,7 @@ body {
     }
 
     .main-header {
-        margin: 42px 0 10px 0;
+        padding: 24px 0 24px 0;
     }
 
     .main-header__services {
@@ -750,6 +774,10 @@ body {
         margin-right: 30px;
     }
 
+    .swiper-wrapper {
+        overflow-y: hidden;
+    }
+
 
     .swiper-wrapper::-webkit-scrollbar {
         width: 0;
@@ -775,6 +803,16 @@ body {
         transform: rotate(180deg);
     }
     
+    .swiper__wrapper {
+        overflow: hidden;
+    }
     
+    .main {
+        position: relative;
+    }
+
+    .container {
+        margin-left: 320px;
+    }
 }
 }

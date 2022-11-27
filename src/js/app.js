@@ -15,19 +15,19 @@ const mdalClosePhone = document.querySelector("#closefbphone");
 
 //modal feed-back
 feedbackMsgBtn.onclick = () => {
-  feedbackMsg.classList.add("active");
+  feedbackMsg.classList.add("feedback-active");
 };
 
 feedbackPhoneBtn.onclick = () => {
-  feedbackPhone.classList.add("active");
+  feedbackPhone.classList.add("phone-active");
 };
 
 modalClose.onclick = () => {
-  feedback.classList.remove("active");
+  feedback.classList.remove("feedback-active");
 };
 
 mdalClosePhone.onclick = () => {
-  feedbackPhone.classList.remove("active");
+  feedbackPhone.classList.remove("phone-active");
 };
 
 
