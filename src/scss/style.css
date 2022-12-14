@@ -772,10 +772,7 @@ body {
     .article__text {
         width: 50%;
     }
-    .article__text-main {
-        /* overflow: hidden;
-        max-height: 160px; */
-    }
+
 
     .article__text {
         width: 50%;
