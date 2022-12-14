@@ -1,25 +1,17 @@
 @font-face {
    font-family: 'TTLakes';
-   src: url(./assets/fonts/TTLakes-Bold.woff),
-   url(./assets/fonts/TTLakes-Bold.woff2);
+   src: url(../fonts/TTLakes-Bold.woff),
+   url(../fonts/TTLakes-Bold.woff2);
    font-weight: bold;
    font-style: normal;
 }
 @font-face {
    font-family: 'TTLakes';
-   src: url(./assets/fonts/TTLakes-Regular.woff),
-   url(./assets/fonts/TTLakes-Regular.woff2);
+   src: url(../fonts/TTLakes-Regular.woff),
+   url(../fonts/TTLakes-Regular.woff2);
    font-weight: bold;
    font-style: normal;
 }
-
-html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
 
 *, *:after, *:before {
     border-style: inherit;
@@ -29,27 +21,40 @@ ul, li, h1, h2, a, p, body {
     margin: 0;
     padding: 0;
 }
-
 .aside {
    display: flex;
    flex-direction: column;
    width: 320px;
-   min-height: 1024px;
+   min-height: 108vmax;
    box-shadow: 16px 0px 52px rgb(14 24 80 / 20%);
+   background-color: #fff;
+   left: -320px;
+   position:absolute;
+   z-index: 10;
 }
+.aside.active {
+   transition: 1s transform;
+   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+     16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 200vw rgba(255, 255, 255, 0.9);
+   transform: translateX(0);
+   left: 0;
+   z-index: 10;
+ }
 
-.container {
+
+.aside-container {
    width: 90%;
    margin: 18px auto 0 auto;
+   overflow: visible;
 }
 
-.header {
+.aside-header {
    display: flex;
    align-items:center;
    justify-content: space-between;
 }
 
-.header__item {
+.aside-header__item {
    width: 40px;
    height: 40px;
    border-radius: 50%;
@@ -59,20 +64,20 @@ ul, li, h1, h2, a, p, body {
    justify-content: center;
 }
 
-.header__item:hover {
+.aside-header__item:hover {
    cursor: pointer;
 }
 
-.header__logo {
+.aside-header__logo {
    margin-right: 70px;
    background-color: #fff;
 }
 
-.nav {
+.aside-nav {
    padding-top: 40px;
 }
 
-.nav__wrapper {
+.aside-nav__list {
    list-style-type: none;
    display: grid;
    flex-wrap: wrap;
@@ -81,7 +86,7 @@ ul, li, h1, h2, a, p, body {
 
 
 
-.nav__item {
+.aside-nav__link{
    font-family: 'TTLakes';
    font-size: 16px;
    line-height: 24px;
@@ -103,24 +108,23 @@ ul, li, h1, h2, a, p, body {
    background-color: #41F6D7;
    transform: matrix(-1, 0, 0, 1, 0, 0);
    position: relative;
-    left: -15px;
-
+   left: -15px;
 }
 
-.aside__nav-link:hover {
+.aside-aside__nav-link:hover {
    color: #7E7E82;
 }
 
-.footer {
-   position: fixed;
-   bottom: 32px;
+.aside-footer {
+
+   margin: 64px 0;
 }
 
-.footer__wrapper {
+.aside-footer__wrapper {
    display: flex;
 }
 
-.footer__button {
+.aside-footer__button--phone {
    width: 40px;
    height: 40px;
    border-radius: 50%;
@@ -131,11 +135,38 @@ ul, li, h1, h2, a, p, body {
    margin-right: 16px;
 }
 
-.footer__button:hover {
+.aside-footer__button--message {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: #FF3E79;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   margin-right: 16px;
+}
+.aside-footer__button {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: #FF3E79;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   margin-right: 16px;
+}
+
+.aside-footer__button:hover {
+   cursor: pointer;
+}
+.aside-footer__button--message:hover {
+   cursor: pointer;
+}
+.aside-footer__button--phone:hover {
    cursor: pointer;
 }
 
-.footer__mail {
+.aside-mail__link {
    display: block;
    font-family: 'TT Lakes';
    font-size: 16px;
@@ -146,7 +177,7 @@ ul, li, h1, h2, a, p, body {
    margin-top: 16px;
 }
 
-.footer__phone {
+.aside-phone__link {
    display: block;
    font-family: 'TT Lakes';
    font-size: 24px;
@@ -157,7 +188,7 @@ ul, li, h1, h2, a, p, body {
    margin-top: 12px;
 }
 
-.foter__lang {
+.aside-lang {
    display: flex;
    list-style-type: none;
    background-color: #fff;
@@ -172,3 +203,16 @@ ul, li, h1, h2, a, p, body {
    color: #7E7E82;
    cursor: pointer;
 }
+
+
+   @media screen and (min-width: 1120px) {
+      .aside {
+         left: 0;
+      }
+      .hide {
+         display: none;
+      }
+   
+      
+   }
+
