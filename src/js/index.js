@@ -1,4 +1,3 @@
-// import '../scss/style.scss'
 
 const burgerOpen = document.querySelector(".header__burger-button");
 const burgerClose = document.querySelector(".hide");
